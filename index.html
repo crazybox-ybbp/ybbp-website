@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Bricolage+Grotesque:wght@800&family=Manrope:wght@400;500;600;800&family=Noto+Sans+Devanagari:wght@700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:dark;--bg:#0B1626;--bg2:#0A2A2E;--panel:#12303A;--teal:#0E4D45;--gold:#F2A900;--ink:#EAF0F7;--muted:#9FB2C8;--sky:#C7DFF2;--line:#24344A;--err:#FF9B8A;
+:root{color-scheme:dark;--bg:#1A3460;--bg2:#16474F;--panel:#1D5560;--teal:#0D5C4F;--gold:#F2A900;--ink:#EAF0F7;--muted:#B7C7DA;--sky:#D2E6F7;--line:#3A5A8C;--err:#FF9B8A;
 --disp:"Bricolage Grotesque","Arial Black",system-ui,sans-serif;--serif:"Bodoni Moda","Didot","Times New Roman",serif;--sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"Space Mono",ui-monospace,Menlo,Consolas,monospace;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;background:var(--bg)}
@@ -28,7 +28,7 @@ h2{font-size:clamp(2.4rem,6vw,4rem);margin:14px 0 18px}
 
 /* hero */
 .hero{min-height:100vh;min-height:100svh;border-top:0;display:flex;flex-direction:column;justify-content:space-between;padding:28px 0 28px;overflow:hidden;
-background:radial-gradient(700px 460px at 8% 95%,rgba(14,77,69,.8) 0%,transparent 70%),radial-gradient(900px 500px at 85% 70%,#1d3a63 0%,transparent 70%),linear-gradient(180deg,#0A1322 0%,#0B1E36 100%)}
+background:radial-gradient(700px 460px at 8% 95%,rgba(13,92,79,.75) 0%,transparent 70%),radial-gradient(900px 500px at 85% 70%,#3567A8 0%,transparent 70%),linear-gradient(180deg,#213F72 0%,#2A5190 100%)}
 .hero svg.sun{position:absolute;right:-60px;bottom:60px;width:min(560px,70vw);opacity:.22;pointer-events:none}
 .top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
 .top nav{display:flex;gap:22px;flex-wrap:wrap}
@@ -74,7 +74,7 @@ footer .lockup img{width:64px;height:64px}
 .reels{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:48px}
 .reel{background:var(--bg);border:1px solid var(--line);display:flex;flex-direction:column;overflow:hidden}
 .reel iframe{width:100%;height:600px;border:0;background:#fff;display:block}
-.reel .ph{height:480px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:24px;background:linear-gradient(160deg,#0E4D45,#13243B);color:var(--muted)}
+.reel .ph{height:480px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:24px;background:linear-gradient(160deg,#0D5C4F,#1A3460);color:var(--muted)}
 .reel .ph b{font:500 1.7rem var(--serif);color:var(--ink)}
 .reel .cap{padding:14px 16px;border-top:1px solid var(--line);font-size:.92rem;color:var(--muted);display:flex;justify-content:space-between;gap:10px}
 .reel .cap a{color:var(--gold);text-decoration:none;white-space:nowrap}
@@ -96,7 +96,7 @@ footer .lockup img{width:64px;height:64px}
 .so .go{width:14px;height:14px;opacity:.55;flex:none}
 .so:hover .go{opacity:1;color:var(--gold)}
 .dream{font-family:var(--serif)!important;font-size:1.3rem;line-height:1.35;color:var(--ink)!important;max-width:26rem!important}
-.marq{position:relative;overflow:hidden;background:linear-gradient(90deg,#0A2A2E 0%,#0E4D45 50%,#0A2A2E 100%);padding:34px 0}
+.marq{position:relative;overflow:hidden;background:linear-gradient(90deg,#16474F 0%,#0D5C4F 50%,#16474F 100%);padding:34px 0}
 .marq::before,.marq::after{content:"";position:absolute;left:0;right:0;height:2px;z-index:2;background:var(--gold);opacity:.85}
 .marq::before{top:0}.marq::after{bottom:0}
 .mtrack{display:flex;width:max-content;animation:marq 38s linear infinite}
@@ -145,7 +145,7 @@ label{font:600 .8rem var(--sans);color:var(--sky)}
 label small{font-weight:400;color:var(--muted)}
 input,select,textarea{background:var(--panel);border:1px solid var(--line);color:var(--ink);padding:14px;font:inherit;font-size:.95rem;border-radius:2px;width:100%}
 textarea{min-height:110px;resize:vertical}
-input::placeholder,textarea::placeholder{color:#6F849B}
+input::placeholder,textarea::placeholder{color:#94A9C4}
 @media (max-width:640px){form{grid-template-columns:1fr}}
 .msg{grid-column:1/-1;font-size:.92rem;min-height:1.4em}
 .msg.bad{color:var(--err)}.msg.good{color:var(--sky)}
@@ -153,7 +153,7 @@ form .btn{justify-self:start;grid-column:1/-1}
 .rule{width:56px;height:1px;background:var(--sky);margin:36px 0 22px}
 
 /* footer */
-footer{border-top:3px solid var(--gold);background:#08111F;padding:56px 0 28px}
+footer{border-top:3px solid var(--gold);background:#112448;padding:56px 0 28px}
 .fcols{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
 .brand{display:flex;gap:12px;align-items:center}
 .brand svg{width:40px;height:40px;color:var(--gold)}
@@ -165,6 +165,29 @@ footer p{color:var(--muted);margin:18px 0 0;max-width:22rem}
 .soc small{color:var(--sky);font-size:.8rem}
 .legal{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:40px;padding-top:20px;font-size:.78rem;color:var(--muted)}
 .legal a{text-decoration:none}
+
+/* ---- light grey + blue theme (hero, band, strip and footer stay dark/blue) ---- */
+:root{color-scheme:light;--bg:#EEF2F6;--bg2:#DCE7F5;--panel:#FFFFFF;--ink:#13233B;--muted:#4A5C75;--sky:#1D5AA6;--line:#C3D0E0;--err:#C0392B;--goldtext:#B06A00;--blue:#1F4E8C}
+.hero,.strip,footer{--ink:#EAF0F7;--muted:#B7C7DA;--sky:#D2E6F7;--line:#3A5A8C;color:var(--ink)}
+h1 em{color:var(--gold)}
+h2 em{color:var(--goldtext)}
+.strip{background:var(--blue)}
+.strip p{color:#DCE8F7}
+.teal{background:var(--bg)}
+.teal .mono{color:var(--sky)}
+.teal .sub{color:var(--muted)}
+.events{border-top-color:var(--line)}
+.events li{border-bottom-color:var(--line)}
+.events span{color:var(--muted)}
+.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+.panel,.alt .panel{background:var(--panel)}
+.list button[aria-selected="true"] i{color:var(--sky)}
+.count b{color:var(--goldtext)}
+.reel{background:var(--panel)}
+.reel .cap a{color:var(--sky)}
+.reel .ph{--ink:#EAF0F7;--muted:#B7C7DA;background:linear-gradient(160deg,#1F4E8C,#1A3460)}
+.marq{background:linear-gradient(90deg,#1A4580 0%,#1F5AA6 50%,#1A4580 100%)}
+input::placeholder,textarea::placeholder{color:#7A8CA5}
 </style>
 </head>
 <body>
@@ -263,6 +286,13 @@ footer p{color:var(--muted);margin:18px 0 0;max-width:22rem}
       <div class="f"><label for="e">Email address</label><input id="e" type="email" autocomplete="email" placeholder="you@example.com"></div>
       <div class="f"><label for="p">Phone number</label><input id="p" inputmode="numeric" autocomplete="tel" placeholder="Your contact number"></div>
       <div class="f"><label for="c">City / District</label><input id="c" autocomplete="address-level2" placeholder="Where you're based"></div>
+	  <div class="f full"><label for="s">State / Union Territory</label>
+	  <select id="s">
+		<option value="">Select your state</option>
+		<option>Andhra Pradesh</option><option>Arunachal Pradesh</option><option>Assam</option><option>Bihar</option><option>Chhattisgarh</option><option>Goa</option><option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option><option>Jharkhand</option><option>Karnataka</option><option>Kerala</option><option>Madhya Pradesh</option><option>Maharashtra</option><option>Manipur</option><option>Meghalaya</option><option>Mizoram</option><option>Nagaland</option><option>Odisha</option><option>Punjab</option><option>Rajasthan</option><option>Sikkim</option><option>Tamil Nadu</option><option>Telangana</option><option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option>
+		<option>Andaman and Nicobar Islands</option><option>Chandigarh</option><option>Dadra and Nagar Haveli and Daman and Diu</option><option>Delhi</option><option>Jammu and Kashmir</option><option>Ladakh</option><option>Lakshadweep</option><option>Puducherry</option>
+	  </select>
+	</div>
       <div class="f full"><label for="r">Where would you like to contribute?</label>
         <select id="r"><option>General Volunteer</option><option>Policy Maker</option><option>Social Media and Content</option><option>Events and Outreach</option><option>Media Spokesperson</option><option>Legal Support</option></select></div>
       <div class="f full"><label for="a">A little about you <small>(optional)</small></label><textarea id="a" placeholder="Your skills, ideas, or how you'd like to help"></textarea></div>
@@ -295,13 +325,13 @@ footer p{color:var(--muted);margin:18px 0 0;max-width:22rem}
 <script>
 var DATA={
 priorities:[
-["Jobs","Opportunity should not be a privilege.","Our sample vision puts dignified work first: practical skill development, stronger local enterprises, and fair access to opportunities for young people.","Skill development · Yearly Calendar · Fair recruitment"],
+["Jobs","Opportunity should not be a privilege.","Our sample vision puts dignified work first: practical skill development, stronger local enterprises, and fair access to opportunities for young people.","Skill development · Yearly Calendar · Fair recruitment · Backfill every job"],
 ["Women Safety","Safety is the first condition of freedom.","Safer streets and workplaces, faster response to complaints, and justice that does not make survivors wait.","Safe public spaces · Quick response · Fast-track justice"],
-["Education","Learning that leads somewhere.","Well-equipped schools, skilled teachers, and education that connects classrooms with real careers.","Better Education · Career Guide · Better Infra"],
+["Education","Learning that leads somewhere.","Well-equipped schools/universities, skilled teachers/professors, and education that connects classrooms with real careers.","Better Education · Career Guide · Better Infra · Fix Loopholes · Education is new Mandatory"],
 ["Tax Benefits","Fair taxes that reward effort.","A simpler tax system that supports young earners, small businesses and first-time entrepreneurs.","Simple filing · Startup relief · Fair burden · Benefits for Taxpayers"],
-["Healthcare","Care that reaches every doorstep.","Primary health centres that work, affordable medicines, and mobile clinics for remote areas.","Primary care · Affordable medicine · Mobile clinics"],
-["Farmers","Those who feed us deserve fair returns.","Fair prices, timely payments, and access to modern tools and markets for farming families.","Fair prices · Timely payment · Modern tools"]],
-manifesto:[["Corruption-Free India", "Every rupee of public money must be traceable. We will put tenders, subsidies, and land records online for public audit, create fast-track anti-corruption courts that decide cases within one year, protect whistleblowers by law, and ensure officials with unexplained assets face swift prosecution. Honesty in governance should be the rule, not the exception. No Suspension, Direct Termination with Desh Droh under Section 152 of the BNS.", "Online audits · Fast-track courts · Whistleblower protection · Desh Droh Act"], ["Political Reform", "Soldiers, teachers, and government employees retire at sixty, yet lawmakers often govern well into their eighties. We propose a retirement age of 60 for elected representatives, with a phased transition. This makes room for fresh ideas, keeps experience valuable through advisory roles, and ensures leadership reflects a young, aspiring India.", "Retire at 60 · Advisory roles · One Pension"], ["Youth Should Lead India", "With over half of Indians under 30, leadership should reflect that reality. We will reserve party tickets for young candidates, fund first-time contestants, create youth parliaments in every state, and offer civic fellowships. Young Indians will not just vote or protest; they will draft laws, run departments, and shape policy.", "Youth tickets · First-time funding · Youth parliaments"], ["Reduce Taxes", "India’s tax system confuses salaried families, small traders, and startups alike. We will simplify GST slabs, cut compliance paperwork, raise income thresholds, and introduce one-page returns for small taxpayers. Lower, predictable taxes will boost savings and entrepreneurship, while stronger action against large evaders protects revenue without burdening honest earners.", "Simpler GST · One-page returns · Higher thresholds"], ["Digitalize Governance", "Citizens shouldn’t queue for days for a simple certificate. We will build one secure platform for IDs, licences, payments, grievances, health, and education services, available in all major Indian languages. Offline help centres and digital literacy drives will ensure villages, the elderly, and those without smartphones are not left behind.", "One platform · Old Pension Scheme Back · Offline help centres"], ["Women’s Safety", "Safety must mean freedom, not curfews. We will fund well-lit streets, CCTV, safe public transport, and women-led helplines with guaranteed response times. Fast-track courts will complete harassment and sexual violence trials within six months, police will receive gender-sensitivity training, and survivors will get legal, medical, and financial support without stigma.", "Safe streets · Six-month trials · Survivor support · Hang rapists till death"], ["Every Life Counts", "No Indian should die because an ambulance arrived late. We will build trauma centres along highways, guarantee emergency response within minutes, strengthen district hospitals, expand health insurance coverage, and enforce road-safety laws strictly. Emergency care in rural India must match city standards, because every life deserves equal urgency.", "Highway trauma centres · Fast response · Rural parity · Air Ambulance in Remote Areas"], ["Police Reforms", "Our police must serve people, not politicians. We will modernize forces with advanced technology, new patrol vehicles, and better equipment, and provide regular professional training. Insulating officers from political pressure and transfers will let them work fairly and fearlessly, so every citizen, not the powerful, receives timely help and justice.", "Digitally Strong · Better Work Culture · For the People · Family Men"], ["Reform Education Ecosystem", "Marks should not matter more than understanding. We will gradually replace rote exams with skill-based assessment, teach coding, financial literacy, and critical thinking from school level, train and fairly pay teachers, and upgrade government schools. Vocational pathways and mother-tongue instruction will help every child, rural or urban, compete confidently.", "Skill-based exams · Teacher's Pay/Pension · Forget Paper Leaks"], ["Hourly Wages", "Millions of gig, factory, and daily-wage workers face unpredictable pay. We will set a national hourly minimum wage adjusted for state living costs, enforce it through digital payroll tracking, and guarantee overtime pay. Small businesses will get transition support, so fair pay for honest work becomes both achievable and sustainable.", "National hourly wage · Overtime pay · Small business support"]]
+["Healthcare","Care that reaches every doorstep.","Primary health centres that work, affordable medicines, and mobile clinics for remote areas.","Primary care · Affordable medicine · Mobile clinics · Fix Doctor:Patient Ratio"],
+["Farmers","Those who feed us deserve fair returns.","Fair prices, timely payments, and access to modern tools and markets for farming families.","Fair prices · Timely payment · Modern tools · MSP Back"]],
+manifesto:[["Corruption-Free India", "Every rupee of public money must be traceable. We will put tenders, subsidies, and land records online for public audit, create fast-track anti-corruption courts that decide cases within one year, protect whistleblowers by law, and ensure officials with unexplained assets face swift prosecution. Honesty in governance should be the rule, not the exception. No Suspension, Direct Termination with Desh Droh under Section 152 of the BNS.", "Online audits · Fast-track courts · Whistleblower protection · Desh Droh Act"], ["Political Reform", "Soldiers, teachers, and government employees retire at sixty, yet lawmakers often govern well into their eighties. We propose a retirement age of 60 for elected representatives, with a phased transition. This makes room for fresh ideas, keeps experience valuable through advisory roles, and ensures leadership reflects a young, aspiring India.", "Retire at 60 · Advisory roles · One Pension"], ["Youth Should Lead India", "With over half of Indians under 30, leadership should reflect that reality. We will reserve party tickets for young candidates, fund first-time contestants, create youth parliaments in every state, and offer civic fellowships. Young Indians will not just vote or protest; they will draft laws, run departments, and shape policy.", "Youth tickets · First-time funding · Youth parliaments"], ["Reduce Taxes", "India’s tax system confuses salaried families, small traders, and startups alike. We will simplify GST slabs, cut compliance paperwork, raise income thresholds, and introduce one-page returns for small taxpayers. Lower, predictable taxes will boost savings and entrepreneurship, while stronger action against large evaders protects revenue without burdening honest earners.", "Simpler GST · One-page returns · Higher thresholds · Revisit Taxes"], ["Digitalize Governance", "Citizens shouldn’t queue for days for a simple certificate. We will build one secure platform for IDs, licences, payments, grievances, health, and education services, available in all major Indian languages. Offline help centres and digital literacy drives will ensure villages, the elderly, and those without smartphones are not left behind.", "One platform · Old Pension Scheme Back · Offline help centres · Cover every individual"], ["Women’s Safety", "Safety must mean freedom, not curfews. We will fund well-lit streets, CCTV, safe public transport, and women-led helplines with guaranteed response times. Fast-track courts will complete harassment and sexual violence trials within six months, police will receive gender-sensitivity training, and survivors will get legal, medical, and financial support without stigma.", "Safe streets · Six-month trials · Survivor support · Hang rapists till death"], ["Every Life Counts", "No Indian should die because an ambulance arrived late. We will build trauma centres along highways, guarantee emergency response within minutes, strengthen district hospitals, expand health insurance coverage, and enforce road-safety laws strictly. Emergency care in rural India must match city standards, because every life deserves equal urgency.", "Highway trauma centres · Fast response · Rural parity · Air Ambulance in Remote Areas"], ["Police Reforms", "Our police must serve people, not politicians. We will modernize forces with advanced technology, new patrol vehicles, and better equipment, and provide regular professional training. Insulating officers from political pressure and transfers will let them work fairly and fearlessly, so every citizen, not the powerful, receives timely help and justice.", "Digitally Strong · Better Work Culture · For the People · Family Men"], ["Reform Education Ecosystem", "Marks should not matter more than understanding. We will gradually replace rote exams with skill-based assessment, teach coding, financial literacy, and critical thinking from school level, train and fairly pay teachers, and upgrade government schools. Vocational pathways and mother-tongue instruction will help every child, rural or urban, compete confidently.", "Skill-based exams · Teacher's Pay/Pension · Forget Paper Leaks"], ["Hourly Wages", "Millions of gig, factory, and daily-wage workers face unpredictable pay. We will set a national hourly minimum wage adjusted for state living costs, enforce it through digital payroll tracking, and guarantee overtime pay. Small businesses will get transition support, so fair pay for honest work becomes both achievable and sustainable.", "National hourly wage · Overtime pay · Small business support · Strict labor laws"]]
 };
 var ARROW='<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 12L12 4M5 4h7v7"/></svg>';
 function pad(n){return n<9?"0"+(n+1):""+(n+1)}
@@ -338,14 +368,15 @@ document.getElementById("f").addEventListener("submit",function(ev){
   var ph=g("p").replace(/\D/g,""),em=g("e");
   m.className="msg bad";
   if(!g("n")){m.textContent="Please enter your full name.";return}
+  if(!g("s")){m.textContent="Please select your state.";return}
   if(!/^\S+@\S+\.\S+$/.test(em)){m.textContent="Please enter a valid email address.";return}
   if(ph.length<10){m.textContent="Please enter a valid 10-digit phone number.";return}
   if(!document.getElementById("cs").checked){m.textContent="Please tick the consent box to continue.";return}
   if(g("hp")||Date.now()-T0<2500){m.className="msg good";m.textContent="Thank you!";return}
-  var body="Name: "+g("n")+"\nEmail: "+em+"\nPhone: "+ph+"\nCity/District: "+g("c")+"\nContribute: "+g("r")+"\nAbout: "+g("a")+"\nConsent: Yes";
+  var body="Name: "+g("n")+"\nEmail: "+em+"\nPhone: "+ph+"\nCity/District: "+g("c")+"\nState: "+g("s")+"\nContribute: "+g("r")+"\nAbout: "+g("a")+"\nConsent: Yes";
   var fm=this;
   if(FORM_URL){
-    var data=new URLSearchParams({name:g("n"),email:em,phone:ph,city:g("c"),role:g("r"),about:g("a"),consent:"yes",website:""});
+    var data=new URLSearchParams({name:g("n"),email:em,phone:ph,city:g("c"),state:g("s"),role:g("r"),about:g("a"),consent:"yes",website:""});
     m.className="msg good";m.textContent="Sending...";
     fetch(FORM_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:data})
       .then(function(){m.className="msg good";m.textContent="Thank you! We have received your details. Check your email for a confirmation.";fm.reset();bumpCount()})
